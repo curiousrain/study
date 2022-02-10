@@ -1,0 +1,16 @@
+header > *{
+    display: inline-block;
+}
+.yellow{
+    color:#EDBF67;
+}
+#menu{
+    background-color: black;
+}
+#menu > a{
+    color: white;
+    text-transform: uppercase;
+}
+#menu > a.active{
+    color:#DB9B20;
+}

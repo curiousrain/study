@@ -1,0 +1,121 @@
+header {
+    padding-left: 192px;
+    display: flex;
+}
+
+header>* {
+    padding: 26px 0px;
+}
+
+.yellow {
+    color: #EDBF67;
+}
+
+h1 {
+    font-family: 'Gothic A1', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    margin-right: 50px;
+    margin-left: 9px;
+}
+
+#menu {
+    background-color: rgb(12, 12, 12);
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu>a {
+    color: white;
+    display: block;
+    margin: 0px 20px;
+    text-decoration: none;
+}
+
+#menu>a.active {
+    color: #DB9B20;
+}
+
+#menu>a:hover {
+    color: #DB9B20;
+}
+
+#menu>a.active:hover {
+    color: white;
+}
+
+#contain {
+    display: flex;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+aside>img {
+    margin: 35px 0px;
+
+}
+
+main {
+    background-color: #EDBF67;
+    padding: 103px 91px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center
+}
+
+#text {
+    flex: 3;
+}
+
+.glam {
+    font-family: 'Quintessential', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 110px;
+}
+
+.lorem {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.08em;
+}
+
+.app {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: white;
+    background-color: #DB9B20;
+    padding: 39px 59px;
+    border-radius: 30px;
+    border: none;
+}
+
+.app:active {
+    background-color: black;
+}
+
+.app:focus {
+    border: 1px solid white;
+}

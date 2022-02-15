@@ -33,22 +33,22 @@ h1 {
     justify-content: center;
 }
 
-#menu>a {
+#menu >a {
     color: white;
     display: block;
     margin: 0px 20px;
     text-decoration: none;
 }
 
-#menu>a.active {
+#menu >a.active {
     color: #DB9B20;
 }
 
-#menu>a:hover {
+#menu >a:hover {
     color: #DB9B20;
 }
 
-#menu>a.active:hover {
+#menu >a.active:hover {
     color: white;
 }
 
@@ -64,7 +64,7 @@ aside {
     align-items: center;
 }
 
-aside>img {
+aside > img {
     margin: 35px 0px;
 
 }

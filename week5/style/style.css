@@ -1,0 +1,122 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    display: block;
+    margin: 5px;
+}
+
+.text {
+    display: flex;
+}
+
+#h2 {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    background-color: wheat;
+    flex: 2;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+}
+
+section,
+#art,
+#tic {
+    background-color: rgb(230, 200, 161);
+    margin: 5px;
+    text-align: center;
+}
+
+section {
+    flex: 1;
+}
+
+#art {
+    flex: 1;
+}
+
+#tic {
+    flex-basis: 100%;
+}
+
+.ul {
+    text-align: justify;
+}
+
+.pad {
+    padding: 40px;
+    text-align: center
+}
+
+aside {
+    display: flex;
+    align-self: stretch;
+    background-color: #a8b9b9;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.rss {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+}
+
+.rss li {
+    background: url("../pics/rss.png") 0 3px no-repeat;
+    padding: 0 0 5px 30px;
+    display: block;
+    text-align: left;
+}
+
+.rss a {
+    list-style-type: none;
+    text-decoration: none;
+    color: #d2f34d;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec {
+    background-color: rgb(89, 141, 30);
+    flex: 3;
+    margin: 10px;
+    padding: 5px;
+
+}
+
+.links {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.links a:active,
+.rss a:active {
+    color: aliceblue;
+}
+
+.links a:hover,
+.rss a:hover {
+    color: black;
+}
+
+.links a {
+    color: #d7c5a2;
+    text-decoration: none;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mail</title>
+    <link rel="stylesheet" href="./style/normalize.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="shortcut icon" href="./pics/email.png">
+</head>
+
+<body>
+    <div id="container">
+        <aside>
+            <img src="./pics/mount.png" alt="nice pic">
+        </aside>
+        <main>
+            <div class="main-cont">
+                <div class="welcome">
+                    Welcome back!
+                </div>
+                <div class="login">
+                    <h1>Login to your account</h1>
+                </div>
+                <form>
+                    <div class="mapass">
+                        <label for="email">Email</label>
+                        <input type="email" name="mail" id="email" class="input">
+                    </div>
+                    <div class="mapass">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" class="input">
+                    </div>
+                    <div class="line">
+                        <div class="me">
+                            <input type="checkbox" name="remember" id="remember">
+                            <label for="remember">Remember me</label>
+                        </div>
+                        <div class="forg">
+                            <a href="#">Forgot password?</a>
+                        </div>
+                    </div>
+                    <input type="submit" name="submit" id="submit" value="Login now" class="input button">
+                    <button class="input button" id="google"> <img src="./pics/google-icon.svg" alt="google"> Or sign-in
+                        with google</button>
+                </form>
+            </div>
+            <div id="dont">
+                Dont have an account?
+                <a href="#" class="join">Join free today</a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

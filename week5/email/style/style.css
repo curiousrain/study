@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#container {
+    display: flex;
+}
+
+aside > img {
+    display: block;
+    height: 100%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+}
+
+.main-cont {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    margin-top: auto;
+}
+
+.welcome {
+    padding: 2px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2D3748;
+    align-self: flex-start;
+}
+
+.login {
+    padding: 0 0 24px 0;
+    align-self: flex-start;
+}
+
+h1 {
+    margin: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.mapass {
+    display: flex;
+    flex-direction: column;
+}
+
+.mapass > label {
+    font-size: 16px;
+    line-height: 19px;
+    color: #4A5568;
+    padding: 11px 0;
+}
+
+.mapass > input {
+    font-size: 14px;
+    line-height: 16px;
+    color: #2D3748;
+}
+
+.line {
+    display: flex;
+    flex-direction: row;
+    padding: 28px 0;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.me {
+    color: #2D3748;
+}
+
+.forg {
+    color: #2C5282;
+}
+
+.forg > a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.input {
+    padding: 17px 20px;
+    border: 1px solid #E8E8E8;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.button {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF
+}
+
+#submit {
+    background: #04C45C;
+}
+
+#google {
+    background: #2D3748;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#google > img {
+    margin-right: 11px;
+}
+
+.join {
+    text-decoration: none;
+    color: #2B6CB0;
+}
+
+#dont {
+    justify-self: flex-end;
+    margin-top: auto;
+    margin-bottom: 50px;
+}

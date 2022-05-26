@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./auto.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Калькулятор стоимости </h1>
+    <form class="car">
+        <label for="brand">Брэнд</label>
+        <select name="brand" id="brand" onchange="selectModel(this)">
+            <option disabled selected>Выберите брэнд</option>
+            <option value="audi">Audi</option>
+            <option value="bmw">BMW</option>
+        </select>
+        <div class="car-model hidden" id="audi">
+            <label for="car-model-audi">Audi</label>
+            <select name="car-model" id="car-model-audi">
+                <option disabled selected>Выберите модель</option>
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+            </select>
+        </div>
+        <div class="car-model hidden" id="bmw">
+            <label for="car-model-bmw">BMW</label>
+            <select name="car-model" id="car-model-bmw">
+                <option disabled selected>Выберите модель</option>
+                <option value="series-1">1 серии</option>
+                <option value="series-2">2 серии</option>
+                <option value="series-3">3 серии</option>
+            </select>
+        </div>
+        <p>Тип кузова</p>
+        <input type="radio" name="body" value="Sedan" /> Седан <br>
+        <input type="radio" name="body" value="Uni" /> Универсал <br>
+        <input type="radio" name="body" value="Hatchback" /> Хэтчбек <br>
+        <input type="radio" name="body" value="Coupe" /> Купе <br>
+        <input type="radio" name="body" value="Convertible" /> Кабриолет <br>
+        <input type="radio" name="body" value="SUV" /> Внедорожник <br>
+        <p>Двигатель</p>
+        <input type="radio" name="engine" value="petrol"> Бензин <br>
+        <input type="radio" name="engine" value="diesel"> Дизель <br>
+        <p>Привод</p>
+        <input type="radio" name="drive" value="front"> Передний<br>
+        <input type="radio" name="drive" value="back"> Задний <br>
+        <input type="radio" name="drive" value="full"> Полный <br>
+        <label for="gear">Коробка передач</label>
+        <select name="gear" id="gear">
+            <option value="robot"> Робот </option>
+            <option value="auto"> Автомат </option>
+            <option value="mech"> Механическая</option>
+        </select>
+        <p>Пробег</p>
+        <input type="text" name="run" id="run">
+        <p>Для чего оцениваете свой автомобиль?</p>
+        <input type="checkbox" name="why-sell" value="sell-new" />Хочу продать и купить новый
+        <input type="checkbox" name="why-sell" value="sell-old" />Хочу продать и купить авто с пробегом
+        <input type="checkbox" name="why-sell" value="sell" />Просто хочу продать
+        <input type="checkbox" name="why-sell" value="wonder-cost" />Интересно, сколько он стоит
+        <button type="button" onclick="calculate()">Оценить автомобиль</button>
+    </form>
+    <script src="./auto.js"></script>
+</body>
+
+</html>

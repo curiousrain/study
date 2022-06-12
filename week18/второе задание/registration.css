@@ -1,0 +1,42 @@
+.container__fio {
+    display: flex;
+    gap: 1em;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+.container__info {
+    display: flex;
+    gap: 1em;
+}
+
+.sex__gender {
+    width: 112px;
+}
+
+.info__bday {
+    display: flex;
+    gap: 1em;
+}
+
+.number {
+    width: 112px;
+}
+
+.container__geo {
+    display: flex;
+    gap: 1em;
+}
+
+.container__sign-in {
+    display: flex;
+    gap: 1em;
+}
+
+.container__mail {
+    display: flex;
+    gap: 1em;
+}

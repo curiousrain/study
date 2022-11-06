@@ -1,0 +1,207 @@
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../font/Helvetica-Light.woff2') format('woff2'),
+        url('../font/Helvetica-Light.woff') format('woff'),
+        url('../font/Helvetica-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Intro';
+    src: url('../font/Intro.woff2') format('woff2'),
+        url('../font/Intro.woff') format('woff'),
+        url('../font/Intro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../font/Helvetica-Regular.woff2') format('woff2'),
+        url('../font/Helvetica-Regular.woff') format('woff'),
+        url('../font/Helvetica-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.container {
+    display: flex;
+    padding: 50px 74px 80px 76px;
+    flex-direction: column;
+}
+
+.container-img {
+    background: url(../pics/pic.png) no-repeat right;
+    background-size: contain;
+}
+
+.header {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 50px 74px 0px 76px;
+    justify-content: space-between;
+}
+
+.button {
+    border-radius: 100px;
+    background: #5222D0;
+    font-family: 'Intro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 13px;
+    color: #FFFFFF;
+    padding: 15px;
+    border: none;
+}
+
+
+.button-small__img {
+    height: 1em;
+    margin-left: 5px;
+}
+
+.main-home {
+    max-width: 70vh;
+    padding: 0px 50px;
+}
+
+.main__h1 {
+    font-family: 'Intro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4em;
+    line-height: 1.2em;
+    color: #000000;
+    margin: 0;
+}
+
+.main__text {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 160%;
+    color: #000000;
+}
+
+.main__button {
+    border-radius: 100px;
+    background: #5222D0;
+    font-family: 'Intro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 35px;
+    color: #FFFFFF;
+    padding: 28px 33px 21px 33px;
+}
+
+.button-large__img {
+    height: 28px;
+    margin-left: 16px;
+}
+
+.container-capabillity {
+    display: flex;
+    padding: 0px 74px 80px 76px;
+    flex-direction: column;
+}
+
+.main-capability {
+    padding: 89px 0 0 0;
+    max-width: 100%;
+}
+
+.main-capability__h1 {
+    padding-left: 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    padding-top: 16px;
+}
+
+.card {
+    max-width: 440px;
+    padding: 20px;
+}
+
+.card__img {
+    display: block;
+    width: 100%;
+}
+
+.h2 {
+    font-family: 'Intro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 120%;
+}
+
+.card__text {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 160%;
+}
+
+.card-wireless {
+    border: 2px solid #BB2247;
+}
+
+.card-games {
+    border: 2px solid #BB2247;
+}
+
+.card-news {
+    background: #EC615B;
+}
+
+.card-news__h2 {
+    color: #FFFFFF
+}
+
+.card-news__button {
+    margin: 23px 0px 55px 0px;
+}
+
+.input {
+    display: block;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 160%;
+    width: 100%;
+    padding: 9px 14px;
+    box-sizing: border-box;
+}
+
+.footer {
+    max-width: 736px;
+    margin-top: 146px;
+}
+
+.footer__nav {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 160%;
+    color: #5222D0;
+}
+
+.link {
+    text-decoration: none;
+}

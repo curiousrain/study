@@ -21,11 +21,69 @@ a {
     color: #FFFFFF;
 }
 
-.main__list_header-current,
-.main__list_header-button,
-.main__projects_link,
-.main__list_game-text {
-    font-family: 'Rubik', sans-serif;
+.menu__home,
+.menu__about,
+.menu__portfolio,
+.menu__news,
+.menu__button {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.menu__button {
+    color: #FFFFFF;
+    background: #FA9021;
+    border: none;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.main__info {
+    display: grid;
+    gap: 20px;
+}
+
+.main__info_text {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 155.2%;
+    margin: 0;
+    color: #E87D0E;
+}
+
+.main__info_header {
+    margin: 0;
+    font-weight: 700;
+    line-height: 155.2%;
+    max-width: 450px;
+    color: #FFFFFF;
+}
+
+.main__info_other {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 200%;
+    margin-bottom: 50px;
+    max-width: 400px;
+    color: #FFFFFF;
+}
+
+.main__info_button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #FFFFFF;
+    border: 1px solid #FA8305;
+    box-sizing: border-box;
+    background-color: #FB9E3C;
+    border-radius: 40px;
+}
+
+.main__info_pics {
+    background: url('../pics/provided/joystick_background.png') no-repeat;
+    background-size: contain;
 }
 
 .main__button {
@@ -36,6 +94,33 @@ a {
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.11);
     padding: 10px 30px;
+}
+
+.main__list_header-current,
+.main__list_header-button,
+.main__projects_link,
+.main__list_game-text {
+    font-family: 'Rubik', sans-serif;
+}
+
+.main__text_subtitle {
+    text-align: center;
+    font-weight: 600;
+    line-height: 187.5%;
+    color: #FFFFFF;
+}
+
+.main__desc {
+    background: url('../pics/development/direction_background.png') no-repeat;
+    background-size: cover;
+}
+
+.main__desc_dev {
+    display: grid;
+}
+
+.main__desc_type {
+    display: flex;
 }
 
 .main__contact {
@@ -72,6 +157,14 @@ a {
     background-color: #070707;
 }
 
+.footer__container {
+    display: grid;
+}
+
+.foooter__copyright {
+    border-top: 0.8px solid #D2D2D2;
+    text-align: center;
+}
 
 @media screen and (min-width:1024px) {
     header {
@@ -79,7 +172,6 @@ a {
         grid-row: auto;
         position: fixed;
         width: 100%;
-        color: #FFFFFF;
         margin: 37px 55px;
     }
 
@@ -102,31 +194,14 @@ a {
         display: none;
     }
 
-    .menu__home,
-    .menu__about,
-    .menu__portfolio,
-    .menu__news,
     .menu__button {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
-    }
-
-    .menu__button {
-        color: #FFFFFF;
-        background: #FA9021;
-        border: none;
-        border-radius: 6px;
         padding: 11px 28px;
-        text-align: center;
     }
 
     .main__info {
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         height: 768px;
-        gap: 20px;
     }
 
     .main__info_article {
@@ -139,21 +214,8 @@ a {
         justify-items: start;
     }
 
-    .main__info_text {
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 155.2%;
-        margin: 0;
-        color: #E87D0E;
-    }
-
     .main__info_header {
-        margin: 0;
-        font-weight: 700;
         font-size: 50px;
-        line-height: 155.2%;
-        max-width: 450px;
-        color: #FFFFFF;
     }
 
     .main__info_details {
@@ -183,15 +245,6 @@ a {
         align-items: center;
         align-self: flex-start;
         padding: 14px 31px 15px 30px;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 24px;
-        text-decoration: none;
-        color: #FFFFFF;
-        border: 1px solid #FA8305;
-        box-sizing: border-box;
-        background-color: #FB9E3C;
-        border-radius: 40px;
         margin-top: 50px;
     }
 
@@ -199,8 +252,6 @@ a {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        background: url('../pics/provided/joystick_background.png') no-repeat;
-        background-size: contain;
         grid-column: 2/3;
         grid-row: 1/3;
         padding: 100px;
@@ -280,16 +331,10 @@ a {
         color: #FFFFFF;
     }
 
-    .main__text {}
-
     .main__text_subtitle {
         margin: 129px auto 67px;
-        text-align: center;
-        font-weight: 600;
         font-size: 35px;
-        line-height: 187.5%;
         max-width: 826px;
-        color: #FFFFFF;
     }
 
     .main__text_section {
@@ -323,8 +368,6 @@ a {
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(2, auto) repeat(2, 1fr);
         justify-items: center;
-        background: url('../pics/development/direction_background.png') no-repeat;
-        background-size: cover;
     }
 
     .main__desc_subtitle {
@@ -354,7 +397,6 @@ a {
     .main__desc_dev {
         grid-column: 1/6;
         grid-row: 3/5;
-        display: grid;
         grid-template-columns: repeat(4, 1fr);
         max-width: 945px;
         justify-content: space-evenly;
@@ -363,7 +405,6 @@ a {
     }
 
     .main__desc_type {
-        display: flex;
         text-decoration: none;
         align-items: center;
         flex-direction: column;
@@ -456,8 +497,6 @@ a {
         display: grid;
         grid-template-columns: 1fr auto;
         grid-template-rows: auto;
-        color: #FFFFFF;
-        background-color: #1C140F;
         align-items: center;
         border-radius: 15px;
         margin: 74px 163px 160px;
@@ -480,24 +519,15 @@ a {
     }
 
     .main__contact_input {
-        background: #FFFFFF;
-        border: none;
         padding: 14px 100px 14px 20px;
     }
 
     .main__contact_button {
-        display: block;
-        align-self: center;
-        background: #DC7000;
         padding: 13px 30px;
         margin: 6px;
-        border-radius: 8px;
     }
 
-    .footer {}
-
     .footer__container {
-        display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, auto);
         padding: 79px 120px 53px 101px;
@@ -529,32 +559,21 @@ a {
         gap: 6px;
     }
 
-    .footer__list_link {}
-
     .footer__text {
         grid-column: 3/4;
         display: flex;
         flex-direction: column;
     }
 
-    .footer__text_contact {}
-
     .footer__text_info {
         margin-top: 0;
     }
-
-    .footer__text_phone {}
 
     .footer__socials {
         grid-column: 4/5;
         display: flex;
         flex-direction: row;
         align-items: flex-end;
-    }
-
-    .foooter__copyright {
-        border-top: 0.8px solid #D2D2D2;
-        text-align: center;
     }
 
     .footer__copy {
@@ -597,30 +616,12 @@ a {
     }
 
     .menu__button {
-        background: #FA9021;
-        border: none;
-        border-radius: 6px;
         padding: 5px 10px;
-        text-align: center;
     }
 
-    .menu__home {}
-
-    .menu__about {}
-
-    .menu__portfolio {}
-
-    .menu__news {}
-
-    .menu__button {}
-
-    .main {}
-
     .main__info {
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 250px);
-        gap: 20px;
     }
 
     .main__info_article {
@@ -632,21 +633,8 @@ a {
         justify-items: start;
     }
 
-    .main__info_text {
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 155.2%;
-        margin: 0;
-        color: #E87D0E;
-    }
-
     .main__info_header {
-        margin: 0;
-        font-weight: 700;
         font-size: 47px;
-        line-height: 155.2%;
-        max-width: 450px;
-        color: #FFFFFF;
     }
 
     .main__info_details {
@@ -675,20 +663,9 @@ a {
         align-items: center;
         align-self: flex-start;
         padding: 14px 31px 15px 30px;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 24px;
-        text-decoration: none;
-        color: #FFFFFF;
-        border: 1px solid #FA8305;
-        box-sizing: border-box;
-        background-color: #FB9E3C;
-        border-radius: 40px;
     }
 
     .main__info_pics {
-        background: url('../pics/provided/joystick_background.png') no-repeat;
-        background-size: contain;
         grid-column: 2/3;
         grid-row: 1/3;
     }
@@ -728,10 +705,6 @@ a {
         justify-content: space-between;
     }
 
-    .main__list_header-current {}
-
-    .main__list_header-text {}
-
     .main__list_header-button {
         padding: 5px 20px;
     }
@@ -745,8 +718,6 @@ a {
         justify-content: space-around;
     }
 
-    .main__list_game {}
-
     .main__list_game-text {
         text-align: center;
     }
@@ -756,18 +727,9 @@ a {
     }
 
     .main__text_subtitle {
-        font-weight: 600;
         font-size: 25px;
-        line-height: 187.5%;
         padding: 0px 100px;
-        text-align: center;
     }
-
-    .main__text_section {}
-
-    .main__text_header {}
-
-    .main__text_desc {}
 
     .main__text_img {
         max-height: 300px;
@@ -775,28 +737,18 @@ a {
 
     .main__desc {
         padding: 0 25px 25px;
-        background: url('../pics/development/direction_background.png') no-repeat;
-        background-size: cover;
         margin: 40px 0;
     }
 
-    .main__desc_subtitle {}
-
-    .main__desc__text {}
-
     .main__desc_dev {
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 35px;
     }
 
     .main__desc_type {
-        display: flex;
         align-items: center;
         gap: 10px;
     }
-
-    .main__desc_pic {}
 
     .main__projects {
         text-align: center;
@@ -843,10 +795,6 @@ a {
         padding: 0 20px;
     }
 
-    .main__slogan_header {}
-
-    .main__slogan_text {}
-
     .main__contact {
         margin: 35px 10px;
         padding: 0 20px;
@@ -856,14 +804,6 @@ a {
         justify-items: center;
     }
 
-    .main__contact__info {}
-
-    .main__contact_header {}
-
-    .main__contact_text {}
-
-    .main__contact_link {}
-
     .main__contact_input {
         padding: 14px;
     }
@@ -872,27 +812,17 @@ a {
         padding: 15px 20px;
     }
 
-    .footer {}
-
     .footer__container {
-        display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, auto);
         padding: 20px 30px 10px 20px;
         gap: 20px;
     }
 
-    .footer__desc {}
-
-    .footer__desc_info {}
-
-    .footer__desc_logo {}
-
     .footer__list {
         padding: 0 25px;
     }
 
-    .footer__list_info {}
 
     .footer__list_links {
         display: flex;
@@ -900,28 +830,13 @@ a {
         gap: 20px;
     }
 
-    .footer__list_link {}
-
     .footer__text {
         display: flex;
         flex-direction: column;
     }
 
-    .footer__text_contact {}
-
-    .footer__text_info {}
-
-    .footer__text_phone {}
-
-    .footer__text_number {}
-
     .footer__socials {
         padding-top: 50px;
-        text-align: center;
-    }
-
-    .foooter__copyright {
-        border-top: 0.8px solid #D2D2D2;
         text-align: center;
     }
 
@@ -955,22 +870,8 @@ a {
         margin-bottom: 10px;
     }
 
-    .menu__home,
-    .menu__about,
-    .menu__portfolio,
-    .menu__news,
     .menu__button {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
-    }
-
-    .menu__button {
-        background: #FA9021;
-        border: none;
-        border-radius: 6px;
         padding: 5px 10px;
-        text-align: center;
     }
 
 
@@ -986,7 +887,7 @@ a {
     }
 
     .main__info_button {
-        padding: 5px;
+        padding: 10px;
         font-weight: 500;
         font-size: 16px;
         line-height: 24px;
@@ -1002,7 +903,8 @@ a {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr;
         align-items: center;
-        justify-items: center
+        justify-items: center;
+        background: none;
     }
 
     .main__info_cry {
@@ -1028,15 +930,14 @@ a {
 
     .main__desc {
         text-align: center;
+        background: none;
     }
 
     .main__desc_dev {
-        display: grid;
         justify-content: center;
     }
 
     .main__desc_type {
-        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
@@ -1047,8 +948,6 @@ a {
     .main__projects {
         text-align: center;
     }
-
-    .project__pics {}
 
     .project__pic-link {
         max-width: 100%;
@@ -1069,6 +968,11 @@ a {
         text-align: center;
     }
 
+    .main__contact {
+        margin-bottom: 10px;
+    }
+
+
     .main__contact__info {
         text-align: center;
     }
@@ -1084,18 +988,13 @@ a {
     }
 
     .main__contact_input {
-        background: #FFFFFF;
-        border: none;
         margin-left: 2px;
     }
 
     .main__contact_button {
-        display: block;
         align-self: center;
-        background: #DC7000;
         padding: 3px 10px;
         margin: 6px;
-        border-radius: 8px;
     }
 
     .footer {

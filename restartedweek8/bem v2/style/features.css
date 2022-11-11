@@ -1,0 +1,158 @@
+@font-face {
+    font-family: 'Intro';
+    src: url('../fonts/intro.woff2') format('woff2'),
+        url('../fonts/intro.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 115px;
+    grid-template-rows: 38px;
+    align-items: center;
+    padding: 49px 74px 76px 76px;
+}
+
+.header__link-logo {
+    grid-column: 1/2;
+    grid-row: 1/1;
+}
+
+.header__link-shop_intro {
+    grid-column: 2/3;
+    grid-row: 1/1;
+}
+
+.header__link-shop_intro,
+.subscribe__button_intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: #5222D0;
+    border-radius: 100px;
+    padding: 15px;
+    font-size: 13px;
+    color: #FFFFFF;
+    border: none;
+}
+
+.header__link-shop_intro,
+.container__tittle,
+.card-tittle_intro,
+.subscribe__button_intro {
+    font-family: 'Intro';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.header__link-img {
+    height: 1em;
+    margin-left: 5px;
+}
+
+.main {
+    margin: 0 72px 0 127px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 150px 1fr 233px;
+}
+
+.container__tittle {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    font-size: 60px;
+    line-height: 120%;
+}
+
+.card-wireless {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.card-text_roboto {
+    max-width: 365px;
+}
+
+.card-text_roboto,
+.subscribe__input_roboto,
+.list__link_roboto {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 160%;
+}
+
+.card-nocomp {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+
+.card-duration {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.card-games {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.card-almost {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.subscribe {
+    grid-column: 3/4;
+    grid-row: 3/4;
+    background: #EC615B;
+    max-width: 365px;
+    max-height: 233px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 22px 55px 18px;
+}
+
+.card-tittle_news {}
+
+.subscribe__input_roboto {
+    display: flex;
+    align-self: stretch;
+    padding-left: 14px;
+}
+
+::placeholder {
+    color: black;
+    opacity: 1;
+}
+
+.subscribe__button_intro {
+    margin-top: 23px;
+    padding: 14px;
+}
+
+.footer {
+    margin: 86px 0 40px 126px;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    gap: 34px;
+}
+
+.list__link_roboto {
+    color: #000000;
+}

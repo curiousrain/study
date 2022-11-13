@@ -125,7 +125,9 @@ a {
     padding: 0 22px 55px 18px;
 }
 
-.card-tittle_news {}
+.card-tittle_news {
+    color: #FFFFFF;
+}
 
 .subscribe__input_roboto {
     display: flex;

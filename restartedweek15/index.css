@@ -1,0 +1,137 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.cart {
+    padding-top: 1rem;
+    padding-bottom: 1em;
+    margin-left: 1em;
+}
+
+.cart-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 140%;
+    padding-bottom: 5rem;
+    margin-left: 5em;
+}
+
+.cart-table {
+    margin: 2em;
+}
+
+.cart-table-names {
+    display: grid;
+    grid-template-columns: 4fr 2fr 2fr 2fr;
+    justify-items: center;
+    margin-left: 3em;
+    padding-bottom: 1em;
+}
+
+.cart-products {
+    display: grid;
+    grid-template-columns: 4fr 2fr 2fr 2fr;
+    justify-items: stretch;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3em;
+    padding-bottom: 2em;
+    padding-top: 2em;
+
+}
+
+.cart-product {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+}
+
+.cart-btn-delete {
+    width: 0.75em;
+
+}
+
+.cart-product-image {
+    width: 8.5em;
+    height: 12.8125em;
+    object-fit: cover;
+    object-position: center;
+}
+
+.cart-product-name {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+.cart-product-quantity>input {
+    width: 1em;
+    height: 0.8em;
+    text-align: center;
+    padding: 1em;
+}
+
+.cart-more-img {
+    width: 0.75em;
+    padding: 0.2em;
+}
+
+.cart-less-img {
+    width: 0.75em;
+    padding: 0.2em;
+}
+
+.cart-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.cart-total-price {
+    padding: 1em;
+}
+
+.cart-total-price::after,
+#total::after {
+    content: " руб";
+}
+
+.cart-discount,
+.cart-total-btn {
+    text-decoration: none;
+    display: flex;
+    width: 268px;
+    height: 61px;
+    left: 79px;
+    top: 0px;
+    padding-left: 3%;
+    text-align: center;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 400;
+    color: #1fa87a;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    transition: .3s;
+    justify-content: center;
+    border: none;
+}
+
+.cart-discount {
+    background-color: #a4e0bb69;
+}
+
+.cart-total-btn {
+    background-color: #d9eed9;
+}

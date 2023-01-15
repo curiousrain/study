@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <main class="container">
+        <div class="cart">
+            <h1 class="cart-title">
+                Корзина
+            </h1>
+            <div class="cart-table">
+                <div class="cart-table-names">
+                    <span>Товар</span>
+                    <span>Цена</span>
+                    <span>Количество</span>
+                    <span>Всего</span>
+                </div>
+                <hr>
+                <div class="cart-products">
+                    <div class="cart-product">
+                        <img src="./assets/piccolo.jpg" alt="Product" class="cart-product-image">
+                        <span class="cart-product-name">Пихта бальзамическая Piccolo</span>
+                    </div>
+                    <div class="cart-product-price">2500</div>
+                    <div class="cart-product-quantity">
+                        <button class="cart-plus-btn" type="button" name="button">
+                            <img src="./assets/more.svg" alt="more" class="cart-more-img" />
+                        </button>
+                        <input type="text" name="name" value="1">
+                        <button class="cart-minus-btn" type="button" name="button">
+                            <img src="./assets/less.svg" alt="less" class="cart-less-img" />
+                        </button>
+                    </div>
+                    <div class="cart-total-price">2500</div>
+                </div>
+                <div class="cart-products">
+                    <div class="cart-product">
+                        <img src="./assets/bobo.jpg" alt="Product" class="cart-product-image">
+                        <span class="cart-product-name">Гортензия метельчатая Bobo</span>
+                    </div>
+                    <div class="cart-product-price">1250</div>
+                    <div class="cart-product-quantity">
+                        <button class="cart-plus-btn" type="button" name="button">
+                            <img src="./assets/more.svg" alt="more" class="cart-more-img" />
+                        </button>
+                        <input type="text" name="name" value="1">
+                        <button class="cart-minus-btn" type="button" name="button">
+                            <img src="./assets/less.svg" alt="less" class="cart-less-img" />
+                        </button>
+                    </div>
+                    <div class="cart-total-price">1250</div>
+                </div>
+                <div class="cart-products">
+                    <div class="cart-product">
+                        <img src="./assets/darts.jpg" alt="Product" class="cart-product-image">
+                        <span class="cart-product-name">Шиповник (роза) руготида Dart's Defender</span>
+                    </div>
+                    <div class="cart-product-price">500</div>
+                    <div class="cart-product-quantity">
+                        <button class="cart-plus-btn" type="button" name="button">
+                            <img src="./assets/more.svg" alt="more" class="cart-more-img" />
+                        </button>
+                        <input type="text" name="name" value="1">
+                        <button class="cart-minus-btn" type="button" name="button">
+                            <img src="./assets/less.svg" alt="less" class="cart-less-img" />
+                        </button>
+                    </div>
+                    <div class="cart-total-price">500</div>
+                </div>
+                <div class="cart-products">
+                    <div class="cart-product">
+                        <img src="./assets/mylove.jpg" alt="Product" class="cart-product-image">
+                        <span class="cart-product-name">Пион молочноцветковый My Love</span>
+                    </div>
+                    <div class="cart-product-price">1950</div>
+                    <div class="cart-product-quantity">
+                        <button class="cart-plus-btn" type="button" name="button">
+                            <img src="./assets/more.svg" alt="more" class="cart-more-img" />
+                        </button>
+                        <input type="text" name="name" value="1">
+                        <button class="cart-minus-btn" type="button" name="button">
+                            <img src="./assets/less.svg" alt="less" class="cart-less-img" />
+                        </button>
+                    </div>
+                    <div class="cart-total-price">1950</div>
+                </div>
+            </div>
+            <div class="cart-buttons">
+                <button class="cart-discount" id="discount">
+                    Использовать купон на 20%
+                </button>
+                <button class="cart-total-btn">
+                    Итого: <span id="total"></span>
+                </button>
+            </div>
+        </div>
+    </main>
+    <script src="./index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#main-pic {
+    display: block;
+    margin: 10px auto;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 735px;
+    margin: 0 auto;
+    gap: 5px;
+}
+
+.pic {
+    display: block;
+    width: 100%;
+}

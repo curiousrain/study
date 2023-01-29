@@ -1,0 +1,39 @@
+.hidename {
+    display: none;
+}
+
+#sentmessages {
+    padding-left: 20px;
+}
+
+.message {
+    display: grid;
+    grid-template-columns: 150px 1fr 100px;
+    grid-template-rows: repeat(2, auto);
+    border: 1px solid black;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#sentmessages img {
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.name {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    border-right: 1px solid black;
+    text-align: center;
+}
+
+.message-text {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding-left: 10px;
+}
+
+.date {
+    grid-column: 3/4;
+}

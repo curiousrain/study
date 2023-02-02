@@ -1,0 +1,45 @@
+.title-list,
+.top-title {
+    font-size: 30px;
+    color: black;
+    text-align: center;
+}
+
+#directors-list {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    display: block;
+    width: 100px;
+    height: 100%;
+}
+
+.directors {
+    border-top: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    gap: 10px;
+    font-size: 17px;
+}
+
+a {
+    text-decoration: none;
+    color: #eb6a0f;
+}
+
+.top-title {
+    border-top: 1px solid black;
+    padding-top: 5px;
+}
+
+#top-films {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+}

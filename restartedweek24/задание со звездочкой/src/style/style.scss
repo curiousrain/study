@@ -1,0 +1,28 @@
+#spinner.hidden {
+    display: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 100px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#top-three {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.top-anime {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

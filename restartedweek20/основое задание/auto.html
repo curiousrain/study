@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./auto.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Калькулятор стоимости </h1>
+    <form class="car">
+        <label for="brand">Брэнд</label>
+        <select name="brand" id="brand" onchange="selectModel(this)">
+            <option disabled selected>Выберите брэнд</option>
+            <option value="audi">Audi</option>
+            <option value="bmw">BMW</option>
+        </select>
+        <div class="car-model hidden" id="audi">
+            <label for="car-model-audi">Audi</label>
+            <select name="car-model" id="car-model-audi">
+                <option disabled selected>Выберите модель</option>
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+            </select>
+        </div>
+        <div class="car-model hidden" id="bmw">
+            <label for="car-model-bmw">BMW</label>
+            <select name="car-model" id="car-model-bmw">
+                <option disabled selected>Выберите модель</option>
+                <option value="series-1">1 серии</option>
+                <option value="series-2">2 серии</option>
+                <option value="series-3">3 серии</option>
+            </select>
+        </div>
+        <p>Топливо</p>
+        <input type="radio" name="fuel" value="petrol"> Бензин <br>
+        <input type="radio" name="fuel" value="diesel"> Дизель <br>
+        <input type="radio" name="fuel" value="gas"> Газ <br>
+        <input type="radio" name="fuel" value="electro">Электричество <br>
+        <p>Объем двигателя</p>
+        <input type="radio" name="volume" value="small"> 1.1-1.8 л<br>
+        <input type="radio" name="volume" value="big">1.8-3.5 л<br>
+        <p>Пробег</p>
+        <input type="text" name="run" id="run">
+        <p>Какой автомобиль?</p>
+        <input type="checkbox" name="what-sell" value="sell-new" />Новый <br>
+        <input type="checkbox" name="why-sell" value="sell-old" />С пробегом <br>
+        <p>Сколько владельцев?</p>
+        <input type="checkbox" name="owners" value="one-two">1-2 <br>
+        <input type="checkbox" name="owners" value="more-two">более 3-х <br>
+        <p>Оплата</p>
+        <input type="checkbox" name="pay-method" value="card">Картой <br>
+        <input type="checkbox" name="pay-method" value="cash">Наличными <br>
+        <input type="checkbox" name="pay-method" value="check">На счет юр.лицу <br>
+        <button type="button" onclick="calculate()" class="button">Оценить автомобиль</button>
+    </form>
+    <script src="./auto.js"></script>
+</body>
+
+</html>

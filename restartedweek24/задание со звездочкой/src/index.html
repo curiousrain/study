@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Рейтинг аниме</title>
+    <link rel="stylesheet" href="./style/style.scss" />
+    <link rel="stylesheet" href="../node_modules/spinkit/spinkit.min.css">
+</head>
+
+<body>
+    <header></header>
+    <div id="spinner">
+        <div class="sk-chase">
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+        </div>
+    </div>
+    <main>
+        <section id="top-three-container">
+            <h2>Топ три аниме</h2>
+            <div id="top-three">
+
+            </div>
+        </section>
+        <section id="all">
+            <h2>По жанрам за все время</h2>
+            <canvas id="genre-chart"></canvas>
+            <div id="genre-table"></div>
+        </section>
+        <section id="airing">
+            <h2>По жанрам на текущее время</h2>
+            <canvas id="years-chart"></canvas>
+            <div id="years-table"></div>
+        </section>
+    </main>
+    <script type="module" src="./index.js"></script>
+</body>
+
+</html>

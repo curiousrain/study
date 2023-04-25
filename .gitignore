@@ -1,2 +1,5 @@
 .history
 .vscode
+node_modules/
+restartedweek24/задание со звездочкой/dist/
+restartedweek24/задание со звездочкой/.parcel-cache/

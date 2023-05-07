@@ -1,0 +1,102 @@
+.title {
+  text-align: center;
+}
+
+.superheroes-list {
+  display: grid;
+  grid-template-columns: repeat(3, 500px);
+  gap: 20px;
+  margin: 10px 10px 30px 10px;
+}
+
+.superhero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  padding: 10px;
+  border: 3px solid black;
+  position: relative;
+  padding-top: 30px;
+}
+
+
+.sh-heartvalue {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  background: url(./images/heart-regular.svg) no-repeat;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sh-occupation {
+  text-align: center;
+}
+
+.sh-powers {
+  text-align: center;
+}
+
+.sh-image {
+  width: 300px;
+}
+
+.sh-info {
+  text-align: justify;
+}
+
+.sh-review {
+  margin-top: auto;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.review-popup {
+  display: none;
+  position: fixed;
+}
+
+.review-popup.active {
+  display: block;
+}
+
+.review-rate {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5px;
+  position: relative;
+  top: -55px;
+  left: -50px;
+}
+
+.review-rate[data-heart="1"] .hearts:nth-child(-n+1) {
+  background-image: url(./images/heart-solid.svg);
+}
+
+.review-rate[data-heart="2"] .hearts:nth-child(-n+2) {
+  background-image: url(./images/heart-solid.svg);
+}
+
+.review-rate[data-heart="3"] .hearts:nth-child(-n+3) {
+  background-image: url(./images/heart-solid.svg);
+}
+
+.review-rate[data-heart="4"] .hearts:nth-child(-n+4) {
+  background-image: url(./images/heart-solid.svg);
+}
+
+.review-rate[data-heart="5"] .hearts {
+  background-image: url(./images/heart-solid.svg);
+}
+
+.hearts {
+  background-image: url(./images/heart-regular.svg);
+  width: 40px;
+  height: 40px;
+}

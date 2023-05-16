@@ -1,19 +1,24 @@
+@use '../../assets/styles/var' as *;
+
 table,
 th,
 td {
     border: 1px solid gray;
+    font: 1em $Gothic;
 }
+
 
 tr:hover {
     color: red;
 }
 
-
 .row-content-buttons {
     padding: 10px;
 }
 
-.row-button-save {}
+.row-button-save {
+    background-image: url(~/public/assets/images/save.png);
+}
 
 .row-button-save,
 .row-button-edit,

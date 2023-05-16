@@ -9,8 +9,14 @@ function MainPage() {
     const allWords = colors.concat(general, clothes, food);
     return (
         <div className="main-container">
-            <header>
-                <h1>Flash Learning Hebrew!</h1>
+            <header className="main-nav">
+                <h1 className="nav-title">Flash Learning Hebrew!</h1>
+                <div className="nav">
+                    <a className="nav-item" href="#">Dictionary</a>
+                    <div>
+
+                    </div>
+                </div>
             </header>
             <div className="card-container">
                 <FlashCard word={colors[0]}></FlashCard>

@@ -1,0 +1,23 @@
+@use '../../assets/styles/var' as *;
+
+.flash-card-container {
+    width: 200px;
+    border: 1px solid $borderColor;
+}
+
+
+.flash-card-front {}
+
+.word-hebrew {}
+
+.flash-card-button {
+    width: 105px;
+}
+
+.flash-card-back {}
+
+.hidden {}
+
+.word-transcription {}
+
+.word-english {}

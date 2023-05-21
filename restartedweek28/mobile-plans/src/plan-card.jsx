@@ -1,8 +1,13 @@
-import './plan.scss'
-function Card(props) {
+import { useState } from 'react';
+import './plan.scss';
+export default function Card(props) {
     const { plan } = props;
+    const [selected, setSelected] = useState(false);
+    const handleChange = () => {
+        setSelected(!selected)
+    }
     return (
-        <div className={"plan-container" + (plan.isSelected ? " selected" : "")}>
+        <div className={"plan-container" + (selected ? " selected" : "")} onClick={handleChange}>
             <div className="plan-name-container">
                 <h3 className="plan-name">{plan.name}</h3>
             </div>
@@ -20,5 +25,3 @@ function Card(props) {
         </div>
     )
 }
-
-export default Card
